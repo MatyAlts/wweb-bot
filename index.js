@@ -63,32 +63,8 @@ client.on("ready", () => {
 })})
 
 client.on('message', msg => {
-    if (msg.body == 'tonga'){
-        var t_value = Math.floor(Math.random() * 7);
-        if(t_value === 0){
-        msg.reply(MessageMedia.fromFilePath(filePath = './tonga.jpg'))
-    }
-    else if (t_value === 1){
-        msg.reply(MessageMedia.fromFilePath(filePath = './tonga2.jpg'))
-    }
-    else if (t_value === 2){
-        msg.reply(MessageMedia.fromFilePath(filePath = './tonga3.jpeg'))
-    }
-    else if (t_value === 3){
-        msg.reply(MessageMedia.fromFilePath(filePath = './tonga4.jpeg'))
-    }
-    else if (t_value === 4){
-        msg.reply(MessageMedia.fromFilePath(filePath = './tonga5.jpeg'))
-    }
-    else if (t_value === 5){
-        msg.reply(MessageMedia.fromFilePath(filePath = './tonga6.jpeg'))
-    }
-    else if (t_value === 6){
-        msg.reply(MessageMedia.fromFilePath(filePath = './tonga7.jpeg'))
-    }
-    else if (t_value === 7){
-        msg.reply(MessageMedia.fromFilePath(filePath = './tonga8.jpeg'))
-    }
+    if (msg.body == '!ping'){
+        msg.reply('pong')
     }
     
     else if (msg.hasMedia){
